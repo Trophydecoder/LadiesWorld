@@ -1,0 +1,21 @@
+<div class="WholeContainer">
+  <div class="categories-container">
+    <button class="category-btn"   (click)="showAll()">All</button>
+    <button class="category-btn" (click)="showStyling()">Styling</button>
+    <button class="category-btn" (click)="showSpecialOccasion()">Special Occasion</button>
+    <button class="category-btn" (click)="showConvenience()">Convenience</button>
+  </div>
+  <div class="MainContainer">
+  <div class="services-container">
+    <div class="service-card" *ngFor="let service of filteredServices">
+      <div class="service-info">
+        <h3>{{ service.service }}</h3>
+        <p><strong>Price:</strong> {{ service.price }}</p>
+        <p><strong>Duration:</strong> {{ service.duration }}</p>
+        <button class="book-btn">
+          <i class="fa fa-cart-plus"></i> Book Now
+        </button>
+      </div>
+    </div>   
+  </div>
+</div>

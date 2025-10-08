@@ -1,0 +1,47 @@
+<section class="services-section">
+
+  <h2 class="section-title">Shop with us</h2>
+
+  <!-- 🔍 Search + Sort -->
+  <div class="services-search-row">
+    <!-- Search Box -->
+    <label class="services-search">
+      <i class="fa fa-search search-icon"></i>
+      <input type="search" placeholder="Search by product  (e.g Elastic Band)" [(ngModel)]="search" aria-label="Search Services">
+    </label>
+
+    <!-- Sort Dropdown -->
+    <div class="services-controls">
+      <div class="sort-wrapper" style="position: relative; display: inline-block;">
+        <select class="sort-dropdown" aria-label="Sort Services">
+          <option value="default">Sort By</option>
+          <option value="price-low-high" >Price: Low to High</option>
+          <option value="price-high-low">Price: High to Low</option>
+        </select>
+        <!-- Icon on the right -->
+        <i class="fa fa-sort" style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); pointer-events: none;"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  
+<section class="products-section">
+  <div class="products-grid">
+    <div class="product-card"   *ngFor="let product of filteredProducts">
+      <div class="product-thumb"(click)="Description()">
+        <img [src]="product.image" [alt]="product.productname" id="prductimage">
+      </div>
+      <h3 class="product-name">{{ product.productname }}</h3> 
+      <p class="product-price"> R{{ product.price }}</p>
+      <button class="add-cart-btn">
+        <i class="fa fa-cart-plus"></i> Add to Cart
+      </button>
+    </div>
+  </div>
+</section>
+
+  

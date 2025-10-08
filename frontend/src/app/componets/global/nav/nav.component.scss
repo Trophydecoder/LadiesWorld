@@ -1,0 +1,176 @@
+
+.ContainerNavbar {
+    scroll-behavior: smooth;
+    width: 95.90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 10;
+    position: fixed;
+    background-color:white;
+    font-family: 'Poppins', sans-serif;   /* clean text */
+    margin-top: -4%;
+  }
+  
+  .logocontainer {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 7%;
+    height: 12vh;
+  }
+  
+  #logoIMG {
+    width: 37%;
+    cursor:pointer;
+
+  }
+  
+  .barcontainer {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+  }
+  
+  .bars {
+    color:var(--hotpink); //will do global styles
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(252, 206, 214, 0.979); //will do global styles
+    padding:5px 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .bars:hover {
+   
+  }
+   .fa-remove {
+   width: 90%;
+   justify-content: end;
+   display: flex;
+
+  }
+  /* Sidebar */
+  .navbar-slide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    transition: width 0.5s;
+    width: 0; /* controlled by TS */
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    background-color: red;
+  }
+  
+  .navbar-slide a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-family: poppins, sans-serif;
+    transition: background 0.3s;
+  }
+  
+  .navbar-slide a:hover {
+
+    color:white;
+  }
+  .Cartzero{
+    Width:25%;
+    margin-top: -12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-slide p{
+    width: 20px;        /* ensures it's round even with single digit */
+    height: 20px;
+    line-height: 18px;      /* vertically center number */
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 50%;
+  }
+  /* Desktop */
+  .DesktopNav {
+    display: none;
+  }
+  .cart{
+   display: none;
+  }
+  @media screen and (min-width: 1024px) {
+    .barcontainer {
+      display: none;
+    }
+    .ContainerNavbar{
+      width: 98.85%;
+    margin-top: -0.80%;
+    height: 10vh;
+    padding-top: 1%;
+  }
+    .logocontainer {
+      width: 30%;
+    
+      justify-content: center;
+    }
+  
+    #logoIMG {
+      width: 15%;
+      margin-top: 0%;
+    }
+  
+    .DesktopNav {
+      display: flex;
+      width:70%;
+      justify-content:center;
+      padding-right: 5%;
+     align-items: center;
+    }
+  
+    .Desktop a {
+      margin-left: 25px;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 500;
+      transition: all 0.8s ease;  /* applies to hover in AND out */
+      cursor:pointer;
+  }
+  .cart{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #CartDesktop{
+    font-size: 23px;
+    color: var(--hotpink);
+  }
+  .cart p {
+    display: inline-block;
+    min-width: 12px;        /* ensures it's round even with single digit */
+    height: 12px;
+    line-height: 14px;      /* vertically center number */
+    text-align: center;
+    font-size: 8px;
+    font-weight: bold;
+  
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 50%;     /* makes it circular */
+    margin: 0;
+    padding: 0;
+  }
+  }
+  

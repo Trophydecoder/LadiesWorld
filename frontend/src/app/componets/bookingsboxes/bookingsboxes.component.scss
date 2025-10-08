@@ -1,0 +1,59 @@
+.booking-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family:("Poppins", sans-serif);
+}
+.booking-form{
+  width: 90%;
+ padding: 16px 14px;
+ 
+}
+.form-group{
+ display: flex;
+ margin-top: 6%;
+ justify-content: space-between;
+
+  height: 5vh;
+}
+input , select{
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border: none;
+  border-radius: 6px;
+  width: 60%;
+}
+.radioContainer{
+  margin-top: 3%;
+  display: flex;
+
+  border: none;
+  border-radius: 6px;
+  flex-direction: column;
+
+}
+.radio-group{
+
+  display: flex;
+  flex-direction: column;
+}
+
+.form-actions{
+  margin-top: 4%;
+}
+button{
+  width: 30%;
+    padding: 13px 25px;
+    background-color: var(--hotpink);
+    color: white;
+    border: none;
+    border-radius: 9px;
+;
+  }
+
+  @media screen and (min-width:1024px){
+    .booking-form{
+      width: 40%;
+    }
+  }

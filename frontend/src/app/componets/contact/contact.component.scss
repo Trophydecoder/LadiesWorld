@@ -1,0 +1,159 @@
+/* 🌸 Contact Section Container */
+.contact-section-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  gap: 3rem;
+  border-radius: 15px;
+
+}
+
+/* 🌸 Contact Info + Form */
+.contact-info-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 68%;
+  margin-top: 2%;
+  padding :24px 15px
+}
+
+.contact-form-card,
+.contact-details-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 2rem 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.123) 0px 1px 3px 0px, rgba(5, 6, 7, 0.034)0px 0px 0px 1px;
+  transition: all 0.3s ease;
+}
+
+.contact-form-card h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 18px;
+  color:var(--lightgrey);
+  text-align: center;
+}
+.contact-form-card h2 span{
+  color:var(--hotpink);
+  font-family:("Poppins", sans-serif);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.contact-form-card p {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input,
+textarea {
+  border-radius: 12px;
+  border: none;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 8px var(--hotpink);
+}
+
+button {
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--hotpink);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #c7436c;
+  transform: scale(1.03);
+}
+
+/* 🌸 Contact Details Card */
+.contact-details-card h3 {
+  color: var(--hotpink);
+  margin-bottom: 1rem;
+}
+
+.contact-details-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #555;
+}
+
+.contact-details-card ul li {
+  margin-bottom: 0.6rem;
+}
+
+.social-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 12px;
+}
+
+.social-links a {
+  color: var(--hotpink);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #c7436c;
+}
+
+/* 🌸 Desktop Layout */
+@media screen and (min-width: 1024px) {
+  .contact-form-card h2 {
+    text-align: left;
+  }
+  .contact-form-card p {
+    text-align: left;
+   
+  }
+  
+  .contact-info-form {
+    flex-direction: row;
+    gap: 2%;
+    width: 70%;
+    justify-content: space-between;
+  }
+
+  .contact-form-card,
+  .contact-details-card {
+    width: 48%;
+  }
+
+  .map-wrapper {
+    flex-direction: row;
+    gap: 1%;
+  }
+
+  .map-wrapper iframe {
+    height: 350px;
+  }
+  .map-section {
+    margin-top:-2%;
+  }
+}

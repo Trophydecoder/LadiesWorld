@@ -1,0 +1,97 @@
+.ContainerForAll{
+  width: 100%;
+  background-color: rgba(255, 213, 255, 0.479);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heading h1 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 18px;
+  color:var(--lightgrey);
+}
+
+.heading  h1 span{
+  font-size: 2rem;
+  color:var(--hotpink);
+  font-family:("Poppins", sans-serif);
+  font-style: normal;
+  font-weight: bold;
+}
+
+.Main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ContainerBoxes{
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+  padding:24px 14px;
+}
+.box1,.box2,.box3,.box4{
+  width: 70%;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 12px;
+  align-items: center;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#boxesimage{
+  width: 100%;
+ border-top-left-radius: 9px;
+ border-top-right-radius: 9px;
+}
+.box1 h1,.box2 h1,.box3 h1,.box4 h1{
+  color:var(--lightgrey);
+  font-family:("Poppins", sans-serif);
+  font-size: 16px;
+}
+.box1 p,.box2 p,.box3 p,.box4 p{
+  color:var(--lightgrey);
+  font-family:("Poppins", sans-serif);
+  font-size: 13px;
+}
+#btn-box{
+  padding: 13px 26px;
+  background-color: var(--hotpink);
+  color: white;
+  border: none;
+  border-radius: 9px;
+}
+#btn-box i {
+  margin-left: 8px;
+}
+
+@media screen and (min-width:1024px){
+
+  .ContainerForAll{
+   margin-top:-4%;
+  }
+ .ContainerBoxes{
+flex-direction: row;
+width: 70%;
+
+  }
+  .box1,.box2,.box3,.box4{
+    width: 50%;
+    height: 55vh;
+  }
+  
+}

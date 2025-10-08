@@ -1,0 +1,51 @@
+.ContainerForAll{
+
+    width: 100%;
+ 
+    font-family: ("Poppins", sans-serif);
+  }
+  
+  .Footer {
+    background-color:rgba(255, 211, 244, 0.445);
+      width: 100%;
+      padding: 1.5rem 0;
+      height: 100%;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      text-align: center;
+      color: var(--hotpink);
+      font-size: 0.9rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .Footer p {
+      margin: 0;
+    }
+    
+    .Footer .social-links a {
+      margin: 0 0.5rem;
+      color: var(--hotpink);
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+    }
+    
+    .Footer .social-links a:hover {
+        color: var(--hotpink);
+      transform: translateY(-2px);
+    }
+    
+    @media screen and (min-width: 1024px) {
+        .ContainerForAll{
+ 
+    
+          }
+      .Footer {
+          width: 100%;
+      
+        }
+    }
+  
+   

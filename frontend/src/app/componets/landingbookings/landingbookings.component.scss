@@ -1,0 +1,78 @@
+/* 🌸 Services Section */
+.services-section {
+    align-items: center;
+    text-align: center;
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.767)),
+      url('/assets/servicelanding.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 6% 4%;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* 🔹 Section Title */
+  .services-section .section-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align:center;
+  }
+  .section-title::after {
+    content: "";
+    display:flex;
+    text-align: center;
+    width: 100%; /* underline length */
+    height: 4px; /* underline thickness */
+    margin-top: 6px;
+    background-color: var(--hotpink);
+    border-radius: 2px;
+  }
+  /* ✨ Intro Text */
+  .services-intro {
+    font-size: 1.15rem;
+    color: #ffffff; /* softer pink for readability */
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    display: none;
+  }
+  
+  .services-intro strong {
+    color: var(--hotpink);
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+  }
+  #Policy{
+    padding: 13px 14px;
+    background-color: var(--hotpink);
+    margin-top: 2%;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-family: "Poppins", sans-serif;
+  }
+  /* ✅ Desktop / Large Screens */
+  @media screen and (min-width: 1024px) {
+    .services-section {
+      height: 80vh;
+    }
+    .services-intro {
+      display: inline;
+    }
+    .section-title::after {
+        width: 50%; /* underline length */
+     
+      }
+  }
+  

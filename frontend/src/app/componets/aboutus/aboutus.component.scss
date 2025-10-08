@@ -1,0 +1,117 @@
+.ContainerForAll {
+  width: 100%;
+  height: 85vh;
+  font-family:("Poppins", sans-serif);
+}
+
+.SectionforAboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  flex-direction: column;
+  padding: 25px 14px;
+}
+
+.SectionforImage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  gap: 3rem;
+  flex-direction: column-reverse;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Aboutme {
+  display: none;
+  width: 300px;
+}
+
+#Aboutme:hover {
+  transform: scale(1.05);
+}
+
+.MyStory {
+  margin-top: -15%;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.MyStory h1 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 18px;
+  color:var(--lightgrey);
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.MyStory h1 span{
+  font-size: 3rem;
+  color:var(--hotpink);
+  font-family:("Poppins", sans-serif);
+  font-style: normal;
+  font-weight: bold;
+}
+
+.MyStory h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 5px;
+  background: var(--MainColor);
+  margin-top: 0.5rem;
+  border-radius: 5px;
+}
+
+.MyStory p {
+  color: rgb(102, 102, 102);
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  margin-top: -10%;
+  max-width: 600px;
+
+}
+
+.MyStory p span {
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color:var(--hotpink);
+}
+
+//Responsive
+@media screen and (min-width: 1024px) {
+  .SectionforImage {
+    flex-direction: row;
+    width: 80%;
+    display: flex;
+  }
+
+  #Aboutme {
+    display: flex;
+    width: 450px;
+  }
+
+  .MyStory {
+    text-align: left;
+    padding-left: 3rem;
+    margin-top: 0%;
+  }
+  .MyStory p {
+    font-size: 16px;
+    margin-top: -4%;
+  }
+}

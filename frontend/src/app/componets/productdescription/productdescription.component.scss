@@ -1,0 +1,139 @@
+.Container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  background-color:rgba(255, 219, 224, 0.048);
+  padding: 5% 0;
+
+}
+
+.product-card {
+  margin-top: 20%;
+  display: flex;
+  background: rgba(255, 255, 255, 0.9);
+  gap: 2rem;
+  width: 80%;
+  max-width: 1000px;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(255, 105, 180, 0.2);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  .wishlist {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #ff4081;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+    i {
+      color: #fff;
+      font-size: 14px;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.product-info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #e91e63;
+  }
+
+  .rating {
+    color: #ff4081;
+    margin-bottom: 1rem;
+
+    i {
+      margin-right: 4px;
+    }
+  }
+
+  .price {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--hotpink);
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #880e4f;
+  }
+
+  .stock {
+    font-size: 0.95rem;
+    color: #ad1457;
+    margin-bottom: 1.5rem;
+  }
+
+  .buy-btn {
+    background: linear-gradient(135deg, #ff4081, #e91e63);
+    color: #fff;
+    border: none;
+    padding: 0.9rem 1.6rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #c2185b;
+      transform: scale(1.05);
+    }
+  }
+}
+
+/* Responsive */
+@media screen and (min-width: 1024px) {
+  .product-card {
+    flex-direction: row;
+    padding: 1.5rem;
+    margin-top: 5%;
+  }
+    .product-image img {
+      max-width: 1200px;
+      margin-bottom: 1rem;
+    }
+
+    .product-info {
+
+    }
+  }
+
