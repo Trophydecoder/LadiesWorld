@@ -6,7 +6,7 @@ import { LandingbookingsComponent } from "../../componets/landingbookings/landin
 
 @Component({
   selector: 'app-bookingspage',
-  imports: [BookingsboxesComponent, NavComponent, LandingbookingsComponent],
+  imports: [BookingsboxesComponent , LandingbookingsComponent],
   templateUrl: './bookingspage.component.html',
   styleUrl: './bookingspage.component.scss'
 })

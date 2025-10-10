@@ -4,7 +4,7 @@ import { NavComponent } from "../../componets/global/nav/nav.component";
 
 @Component({
   selector: 'app-shoppage',
-  imports: [ShopproductsComponent, NavComponent],
+  imports: [ShopproductsComponent],
   templateUrl: './shoppage.component.html',
   styleUrl: './shoppage.component.scss'
 })

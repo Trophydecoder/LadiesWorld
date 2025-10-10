@@ -4,7 +4,7 @@ import { NavComponent } from "../../componets/global/nav/nav.component";
 
 @Component({
   selector: 'app-product-descpage',
-  imports: [ProductdescriptionComponent, NavComponent],
+  imports: [ProductdescriptionComponent],
   templateUrl: './product-descpage.component.html',
   styleUrl: './product-descpage.component.scss'
 })

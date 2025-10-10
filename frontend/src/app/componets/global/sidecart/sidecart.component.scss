@@ -1,0 +1,18 @@
+/* cart.component.css */
+.side-cart {
+    position: fixed;
+    top: 0;
+    right: -300px;   /* hidden off screen */
+    width: 70%;
+    height: 100%;
+    background: #fff;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.3);
+    padding: 1rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+  }
+  
+  .side-cart.open {
+    right: 0; /* slides in */
+  }
+  

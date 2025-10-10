@@ -8,7 +8,7 @@ import { ContactComponent } from "../../componets/contact/contact.component";
 
 @Component({
   selector: 'app-homepage',
-  imports: [NavComponent, LandingComponent, AboutusComponent, ButtonsComponent,ContactComponent],
+  imports: [LandingComponent, AboutusComponent, ButtonsComponent,ContactComponent],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.scss'
 })

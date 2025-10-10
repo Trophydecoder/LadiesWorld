@@ -6,7 +6,7 @@ import { NavComponent } from "../../componets/global/nav/nav.component";
 
 @Component({
   selector: 'app-servicespage',
-  imports: [ServiceslandingComponent, ServicesbuttonsComponent, NavComponent],
+  imports: [ServiceslandingComponent, ServicesbuttonsComponent],
   templateUrl: './servicespage.component.html',
   styleUrl: './servicespage.component.scss'
 })

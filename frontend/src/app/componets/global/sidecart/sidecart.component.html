@@ -1,1 +1,8 @@
-<p>sidecart works!</p>
+<!-- cart.component.html -->
+<div class="overlay" *ngIf="open" (click)="closeCart.emit()"></div>
+
+<div class="side-cart" [class.open]="open">
+  <button class="close-btn" (click)="closeCart.emit()">✖</button>
+  <h3>Your Cart</h3>
+  <p>Cart items go here...</p>
+</div>

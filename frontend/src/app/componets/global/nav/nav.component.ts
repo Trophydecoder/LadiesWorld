@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { EventEmitter } from '@angular/core';
+import { Output } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -9,6 +10,11 @@ import { Router } from '@angular/router';
   styleUrl: './nav.component.scss'
 })
 export class NavComponent {
+  @Output() cartClicked = new EventEmitter<void>();
+
+  onCartClick() {
+    this.cartClicked.emit();
+  }
 
   constructor(private router: Router) {}
   sidebarWidth = 0;

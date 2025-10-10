@@ -5,7 +5,7 @@ import { NavComponent } from "../../componets/global/nav/nav.component";
 
 @Component({
   selector: 'app-cart-page',
-  imports: [CartItemsComponent, NavComponent],
+  imports: [CartItemsComponent],
   templateUrl: './cart-page.component.html',
   styleUrl: './cart-page.component.scss'
 })
