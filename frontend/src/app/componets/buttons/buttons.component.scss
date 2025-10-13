@@ -1,6 +1,6 @@
 .ContainerMain{
   width: 100%;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(255, 163, 209, 0.26);
   height: 100%;
 }
 
@@ -17,6 +17,7 @@
   gap: 30px;
 }
 .Box{
+  border-radius:9px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   width: 65%;
   display: flex;
@@ -28,6 +29,8 @@
 }
 #boximage{
   width: 100%;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
 }
 .Box h3{
   font-family: 'Sacramento', cursive;
@@ -56,6 +59,7 @@ button{
 
 /////////////////////////////////////////////////MIDDLE BOX////////////////////////////
 .BoxDiffer{
+  border-radius: 9px;
   background: 
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.767)),
     url('/assets/shop.jpg');
