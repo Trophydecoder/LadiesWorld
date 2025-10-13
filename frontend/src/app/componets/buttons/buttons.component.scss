@@ -1,27 +1,30 @@
 .ContainerMain{
   width: 100%;
+  background-color: rgb(0, 0, 0);
+  height: 100%;
 }
+
 .ContainerSection{
   width: 100%;
 }
 .Section{
   display: flex;
-  width: 100%;
+  width:98%;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 3%;
+  padding: 25px 17px;
   gap: 30px;
 }
 .Box{
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   width: 65%;
   display: flex;
-  justify-content: center;
+  background-color: white;
   flex-direction: column;
-  align-items: center;
+
   text-align: center;
-  height: 70vh;
+  height: 55vh;
 }
 #boximage{
   width: 100%;
@@ -35,6 +38,7 @@
   margin-top: -17%;
   font-family: 'Black Han Sans', sans-serif;
   font-size: 35px;
+  color: var(--lightgrey);
 }
 .Box p{
   margin-top: -8%;
@@ -64,7 +68,7 @@ button{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 50vh;
+  height: 55vh;
 }
 .BoxDiffer h3{
   font-family: 'Sacramento', cursive;
@@ -90,11 +94,29 @@ button{
     flex-direction:row;
   }
   .Box{
-    width: 20%;
-    height: 73vh;
+    width: 22%;
+    height: 65vh;
   }
+  .Box h2{
+    margin-top: -15%;
+    font-size: 30px;
+  }
+  .Box p{
+    font-size: 11px;
+
+  }
+
   .BoxDiffer{
     width: 20%;
-    height: 73vh;
+    height: 65vh;
+  } 
+  .BoxDiffer h2{
+    margin-top: -14%;
+    font-size: 30px;
+  }
+  
+  .BoxDiffer p{
+    font-size: 11px;
+
   }
 }

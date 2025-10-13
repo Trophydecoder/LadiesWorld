@@ -2,6 +2,10 @@
   width: 100%;
   height: 85vh;
   font-family:("Poppins", sans-serif);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .SectionforAboutme {
@@ -39,31 +43,32 @@
 }
 
 .MyStory {
-  margin-top: -15%;
+  margin-top: -23%;
   width: 100%;
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   padding: 1rem 2rem;
-  text-align: center;
+  text-align: justify;
 }
 
 .MyStory h1 {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-size: 18px;
-  color:var(--lightgrey);
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Sacramento', cursive;
+  color: var(--hotpink);
   margin-bottom: 1rem;
   position: relative;
 }
 
 .MyStory h1 span{
-  font-size: 3rem;
-  color:var(--hotpink);
-  font-family:("Poppins", sans-serif);
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Black Han Sans', sans-serif;
+  
+  color:var(--lightgrey);
+  font-size: 40px;
+
 }
 
 .MyStory h1::after {
@@ -78,31 +83,31 @@
 
 .MyStory p {
   color: rgb(102, 102, 102);
-  font-size: 1.1rem;
+  font-size: 17px;
   line-height: 1.7rem;
-  margin-top: -10%;
+  margin-top: -5%;
   max-width: 600px;
 
 }
 
 .MyStory p span {
   font-weight: bold;
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  color:var(--hotpink);
-}
+  color: var(--hotpink);
 
+}
 //Responsive
 @media screen and (min-width: 1024px) {
   .SectionforImage {
     flex-direction: row;
-    width: 80%;
+    justify-content:center;
+    width: 82%;
     display: flex;
   }
 
   #Aboutme {
     display: flex;
-    width: 450px;
+    width: 350px;
+    border-radius: 12px;
   }
 
   .MyStory {
@@ -110,8 +115,13 @@
     padding-left: 3rem;
     margin-top: 0%;
   }
+  .MyStory h1 {
+    text-align:justify;
+    font-size: 25px;
+  }
   .MyStory p {
     font-size: 16px;
     margin-top: -4%;
   }
+ 
 }
