@@ -57,7 +57,7 @@ form {
 
 input,
 textarea {
-  border-radius: 12px;
+  border-radius: 30px;
   border: none;
   padding: 0.8rem 1rem;
   font-size: 1rem;
@@ -73,10 +73,10 @@ textarea:focus {
 
 button {
   padding: 12px 18px;
-  border-radius: 4px;
+  border-radius: 30px;
   border: none;
-  background-color:black;
-  color: #fff;
+  background-color:var(--hotpink);
+  color:white;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
@@ -84,7 +84,7 @@ button {
 }
 
 button:hover {
-  background-color:var(--hotpink);
+  background-color:rgb(252, 0, 176);
   transform: scale(1.03);
 }
 
