@@ -6,8 +6,8 @@
   align-items: center;
   font-family: "Poppins", sans-serif;
   gap: 3rem;
-  border-radius: 15px;
 
+ background-color: black;
 }
 
 /* 🌸 Contact Info + Form */
@@ -22,7 +22,6 @@
 
 .contact-form-card,
 .contact-details-card {
-  background-color: #fff;
   border-radius: 15px;
   padding: 2rem 1.5rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -74,9 +73,9 @@ textarea:focus {
 
 button {
   padding: 12px 18px;
-  border-radius: 12px;
+  border-radius: 4px;
   border: none;
-  background-color: var(--hotpink);
+  background-color:black;
   color: #fff;
   font-size: 1rem;
   font-weight: 500;
@@ -85,7 +84,7 @@ button {
 }
 
 button:hover {
-  background-color: #c7436c;
+  background-color:var(--hotpink);
   transform: scale(1.03);
 }
 
