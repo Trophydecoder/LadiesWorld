@@ -1,97 +1,100 @@
-.ContainerForAll{
+.ContainerMain{
   width: 100%;
-  background-color: rgba(255, 213, 255, 0.479);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-.heading{
+.ContainerSection{
+  width: 100%;
+}
+.Section{
   display: flex;
-  flex-direction: column;
+  width: 100%;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+  gap: 30px;
+}
+.Box{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
   text-align: center;
+  height: 70vh;
 }
-
-.heading h1 {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-size: 18px;
-  color:var(--lightgrey);
-}
-
-.heading  h1 span{
-  font-size: 2rem;
-  color:var(--hotpink);
-  font-family:("Poppins", sans-serif);
-  font-style: normal;
-  font-weight: bold;
-}
-
-.Main{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.ContainerBoxes{
-  width: 95%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 19px;
-  padding:24px 14px;
-}
-.box1,.box2,.box3,.box4{
-  width: 70%;
-  height: 50vh;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 12px;
-  align-items: center;
-  text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-}
-#boxesimage{
+#boximage{
   width: 100%;
- border-top-left-radius: 9px;
- border-top-right-radius: 9px;
 }
-.box1 h1,.box2 h1,.box3 h1,.box4 h1{
-  color:var(--lightgrey);
-  font-family:("Poppins", sans-serif);
-  font-size: 16px;
+.Box h3{
+  font-family: 'Sacramento', cursive;
+  color: var(--hotpink);
+  font-size: 30px;
 }
-.box1 p,.box2 p,.box3 p,.box4 p{
-  color:var(--lightgrey);
-  font-family:("Poppins", sans-serif);
-  font-size: 13px;
+.Box h2{
+  margin-top: -17%;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 35px;
 }
-#btn-box{
-  padding: 13px 26px;
+.Box p{
+  margin-top: -8%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: var(--lightgrey);
+}
+button{
+  padding: 13px 15px;
   background-color: var(--hotpink);
-  color: white;
   border: none;
-  border-radius: 9px;
+  border-radius: 3px;
+  color: white;
 }
-#btn-box i {
-  margin-left: 8px;
+
+/////////////////////////////////////////////////MIDDLE BOX////////////////////////////
+.BoxDiffer{
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.767)),
+    url('/assets/shop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 50vh;
 }
+.BoxDiffer h3{
+  font-family: 'Sacramento', cursive;
+  color: var(--hotpink);
+  font-size: 30px;
+}
+.BoxDiffer h2{
+  margin-top: -17%;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 35px;
+  color: white;
+}
+.BoxDiffer p{
+  margin-top: -8%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: var(--lightgrey);
+}
+/////////////////////////////////////////////////MIDDLE BOX////////////////////////////
 
 @media screen and (min-width:1024px){
-
-  .ContainerForAll{
-   margin-top:-4%;
+  .Section{
+    flex-direction:row;
   }
- .ContainerBoxes{
-flex-direction: row;
-width: 70%;
-
+  .Box{
+    width: 20%;
+    height: 73vh;
   }
-  .box1,.box2,.box3,.box4{
-    width: 50%;
-    height: 55vh;
+  .BoxDiffer{
+    width: 20%;
+    height: 73vh;
   }
-  
 }
