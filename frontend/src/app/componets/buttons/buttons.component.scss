@@ -1,8 +1,9 @@
 .ContainerMain{
   width: 100%;
-  background-color: rgba(255, 14, 175, 0.096);
+  background-color: rgba(249, 182, 255, 0.247);
   height: 100%;
   margin-top: -15%;
+  
 }
 
 .ContainerSection{
@@ -24,7 +25,7 @@
   display: flex;
   background-color: white;
   flex-direction: column;
-
+ border: 5px solid white;
   text-align: center;
   height: 60vh;
 }
@@ -32,6 +33,7 @@
   width: 100%;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
+  opacity: 0.80;
 }
 .Box h3{
   font-family: 'Sacramento', cursive;
@@ -41,6 +43,7 @@
 .Box h2{
   margin-top: -17%;
   font-size: 35px;
+  font-family: var(--GlobalFont);
   color: var(--lightgrey);
 }
 .Box p{
@@ -70,6 +73,7 @@ button{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  border: 5px solid white;
   align-items: center;
   text-align: center;
   height: 55vh;
@@ -96,7 +100,7 @@ button{
 @media screen and (min-width:1024px){
   .ContainerMain{
     width: 100%;
-    background-color: rgba(255, 14, 175, 0.096);
+  
     height: 100%;
     margin-top: 0%;
     }
@@ -104,7 +108,7 @@ button{
     flex-direction:row;
   }
   .Box{
-    width: 22%;
+    width: 21%;
     height: 65vh;
   }
   .Box h2{

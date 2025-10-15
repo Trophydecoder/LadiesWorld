@@ -6,8 +6,10 @@
   align-items: center;
   font-family: "Poppins", sans-serif;
   gap: 3rem;
-
- background-color: black;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.888), rgba(0, 0, 0, 0.888)), url('/assets/servicelanding.png'); /* 🔹 Replace with your image path */
+  background-size: cover;     /* Makes the image cover the whole section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
 }
 
 /* 🌸 Contact Info + Form */
@@ -24,7 +26,7 @@
 .contact-details-card {
   border-radius: 15px;
   padding: 2rem 1.5rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
   transition: all 0.3s ease;
 }
 

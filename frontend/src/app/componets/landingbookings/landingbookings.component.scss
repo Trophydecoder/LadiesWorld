@@ -25,18 +25,10 @@
     font-weight: 700;
     margin-bottom: 1rem;
     color: #fff;
+    font-family: var(--GlobalFont);
     text-align:center;
   }
-  .section-title::after {
-    content: "";
-    display:flex;
-    text-align: center;
-    width: 100%; /* underline length */
-    height: 4px; /* underline thickness */
-    margin-top: 6px;
-    background-color: var(--hotpink);
-    border-radius: 2px;
-  }
+ 
   /* ✨ Intro Text */
   .services-intro {
     font-size: 1.15rem;
@@ -45,6 +37,7 @@
     max-width: 700px;
     margin: 0 auto;
     display: none;
+
   }
   
   .services-intro strong {
@@ -56,7 +49,7 @@
   #Policy{
     padding: 13px 14px;
     background-color: var(--hotpink);
-    margin-top: 2%;
+ 
     color: white;
     border: none;
     border-radius: 9px;
@@ -65,13 +58,15 @@
   /* ✅ Desktop / Large Screens */
   @media screen and (min-width: 1024px) {
     .services-section {
-      height: 80vh;
+      height: 50vh;
     }
     .services-intro {
       display: inline;
     }
-    .section-title::after {
-        width: 50%; /* underline length */
+  
+  /* 🔹 Section Title */
+  .services-section .section-title {
+      font-size: 45px; /* underline length */
      
       }
   }
