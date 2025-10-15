@@ -1,9 +1,13 @@
 <div class="WholeContainer">
   <div class="categories-container">
-    <button class="category-btn"   (click)="showAll()">All</button>
-    <button class="category-btn" (click)="showStyling()">Styling</button>
-    <button class="category-btn" (click)="showSpecialOccasion()">Special Occasion</button>
-    <button class="category-btn" (click)="showConvenience()">Convenience</button>
+    <div class="category-dropdown">
+      <select (change)="onCategoryChange($event)">
+        <option value="all">All Services</option>
+        <option value="styling">Styling</option>
+        <option value="special">Special Occasion</option>
+        <option value="convenience">Convenience</option>
+      </select>
+    </div>
   </div>
   <div class="MainContainer">
   <div class="services-container">

@@ -13,6 +13,28 @@ export class ServicesbuttonsComponent {
   services = services;
   filteredServices = [...this.services];  
 
+
+
+    onCategoryChange(event: Event) {
+      const category = (event.target as HTMLSelectElement).value; // type-safe
+      switch(category) {
+        case 'all':
+          this.showAll();
+          break;
+        case 'styling':
+          this.showStyling();
+          break;
+        case 'special':
+          this.showSpecialOccasion();
+          break;
+        case 'convenience':
+          this.showConvenience();
+          break;
+      }
+    }
+    
+
+
   showAll() {
     
     this.filteredServices = [...this.services];
