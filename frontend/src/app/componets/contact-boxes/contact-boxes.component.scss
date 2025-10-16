@@ -2,9 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -3%;
+    height: 26vh;
   }
 
   .ContainerBoxes{
+    border-radius: 8px;
+    background-color: white;
     width: 95%;
     display: flex;
     justify-content: center;
@@ -48,7 +52,7 @@
 
    .ContainerBoxes{
   flex-direction: row;
-  width: 70%;
+  width: 65%;
   
     }
     .box1,.box2,.box3{
