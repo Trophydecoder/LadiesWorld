@@ -30,16 +30,23 @@
 
   
 <section class="products-section">
-  <div class="products-grid">
-    <div class="product-card"   *ngFor="let product of filteredProducts">
-      <div class="product-thumb"(click)="Description()">
+  <div class="products-grid" *ngIf="filteredProducts.length > 0; else notFound">
+    <div class="product-card" *ngFor="let product of filteredProducts">
+      <div class="product-thumb" (click)="Description()">
         <img [src]="product.image" [alt]="product.productname" id="prductimage">
       </div>
-      <h3 class="product-name">{{ product.productname }}</h3> 
-      <p class="product-price"> R{{ product.price }}</p>
-     
+      <h3 class="product-name">{{ product.productname }}</h3>
+      <p class="product-price">R{{ product.price }}</p>
     </div>
   </div>
+
+  <!-- Template for "Not Found" -->
+  <ng-template #notFound>
+    <div class="no-products">
+      <i class="fa-solid fa-box-open fa-3x"></i>
+      <p>No products found</p>
+    </div>
+  </ng-template>
 </section>
 
   

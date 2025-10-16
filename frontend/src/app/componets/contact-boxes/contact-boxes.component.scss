@@ -2,12 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -3%;
-    height: 26vh;
   }
 
   .ContainerBoxes{
-    border-radius: 8px;
     background-color: white;
     width: 95%;
     display: flex;
@@ -49,11 +46,17 @@
 
 
   @media screen and (min-width:1024px){
+    .Main{
 
+      margin-top: -3%;
+      height: 26vh;
+
+    }
+    
    .ContainerBoxes{
   flex-direction: row;
   width: 65%;
-  
+  border-radius: 8px;
     }
     .box1,.box2,.box3{
       width: 50%;

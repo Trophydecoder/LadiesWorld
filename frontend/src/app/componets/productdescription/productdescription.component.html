@@ -3,17 +3,17 @@
     
     <!-- Product Image -->
     <div class="product-image">
-      <img [src]="product[1].image" [alt]="product[1].productname">
+      <img [src]="product[0].image" [alt]="product[0].productname">
     </div>
 
     <!-- Product Info -->
     <div class="product-info">
-      <h2>{{ product[1].productname }}</h2>
+      <h2>{{ product[0].productname }}</h2>
 
       
 
-      <p class="price">R{{ product[1].price }}</p>
-      <p class="description">{{ product[1].description }}</p>
+      <p class="price">R{{ product[0].price }}</p>
+      <p class="description">{{product[0].description }}</p>
       <p class="stock">In Stock</p>
       <button class="buy-btn">Add to Cart</button>
     </div>
