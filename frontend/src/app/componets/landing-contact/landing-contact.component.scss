@@ -24,19 +24,11 @@
     font-size: 2.4rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #fff;
+    color: var(--hotpink);
     text-align:center;
+    font-family: var(--GlobalFont);
   }
-  .section-title::after {
-    content: "";
-    display:flex;
-    text-align: center;
-    width: 100%; /* underline length */  
-    height: 4px; /* underline thickness */
-    margin-top: 6px;
-    background-color: var(--hotpink);
-    border-radius: 2px;
-  }
+
   /* ✨ Intro Text */
   .services-intro {
     font-size: 1.15rem;
@@ -57,14 +49,14 @@
   /* ✅ Desktop / Large Screens */
   @media screen and (min-width: 1024px) {
     .services-section {
-      height:60vh;
+      height:50vh;
     }
     .services-intro {
       display: inline;
     }
     
-    .section-title::after {
-      width: 50%; /* underline length */
+    .services-section .section-title {
+     font-size: 60px;
     }
   }
   

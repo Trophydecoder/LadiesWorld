@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 235, 238, 0.822);
   }
 
   .ContainerBoxes{
@@ -43,17 +42,7 @@
     font-family:("Poppins", sans-serif);
     font-size: 13px;
   }
-  
-  #btn-box{
-    padding: 13px 26px;
-    background-color: var(--hotpink);
-    color: white;
-    border: none;
-    border-radius: 9px;
-  }
-  #btn-box i {
-    margin-left: 8px;
-  }
+
 
   @media screen and (min-width:1024px){
 
@@ -64,6 +53,6 @@
     }
     .box1,.box2,.box3{
       width: 50%;
-      height: 23vh;
+      height: 18vh;
     }
 }
