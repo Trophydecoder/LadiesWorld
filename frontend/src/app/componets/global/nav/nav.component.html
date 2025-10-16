@@ -19,8 +19,8 @@
             <a routerLink="" (click)="shop()" (click)="closeLSide()">Shop</a>
             <a routerLink="" (click)="contact()" (click)="closeLSide()">Contact</a>
            
-            <a routerLink="" (click)="contact()" (click)="closeLSide()">Cart</a>
-            <div class="Cartzero">
+            <a routerLink="" (click)="contact()" (click)="closeLSide()"  (click)="cartClicked.emit()">Cart</a>
+            <div class="Cartzero" (click)="closeLSide()" (click)="cartClicked.emit()">
               <p>0</p>
             </div>
      

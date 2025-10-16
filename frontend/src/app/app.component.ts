@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavComponent } from "./componets/global/nav/nav.component";
 import { FooterComponent } from "./componets/footer/footer.component";
-import { CartItemsComponent } from "./componets/cart-items/cart-items.component";
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { SidecartComponent } from "./componets/global/sidecart/sidecart.component";

@@ -5,7 +5,6 @@ import { ShoppageComponent } from './pages/shoppage/shoppage.component';
 import { ServicespageComponent } from './pages/servicespage/servicespage.component';
 import { ProductDescpageComponent } from './pages/product-descpage/product-descpage.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
-import { CartPageComponent } from './pages/cart-page/cart-page.component';
 
 export const routes: Routes = [
 
@@ -15,5 +14,4 @@ export const routes: Routes = [
     {path :'shop-page' , title:'shop-page' , component:ShoppageComponent},
     {path :'prod-desc' , title:'prod-desc' , component:ProductDescpageComponent},
     {path :'contact-page' , title:'contact-page' , component:ContactPageComponent},
-    {path :'cart-page' , title:'cart-page' , component:CartPageComponent}
 ];
